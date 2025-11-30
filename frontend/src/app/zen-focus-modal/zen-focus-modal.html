@@ -1,0 +1,19 @@
+<div class="zen-overlay" (click)="onClose()">
+  <div class="zen-card" (click)="$event.stopPropagation()">
+
+    <h3>🎯 Focus Principal</h3>
+
+    <p class="zen-title">{{ todo.title }}</p>
+
+    <div class="zen-actions">
+      <button mat-stroked-button color="warn" (click)="onClose()">
+        Plus tard
+      </button>
+
+      <button mat-flat-button color="primary" (click)="onComplete()">
+        <mat-icon>check</mat-icon> C'est fait !
+      </button>
+    </div>
+
+  </div>
+</div>
